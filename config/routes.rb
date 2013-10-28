@@ -1,4 +1,7 @@
 Onlinestore::Application.routes.draw do
+  resources :products
+
+
   get "home/index"
 
   get "home/about"
