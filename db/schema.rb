@@ -11,17 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131029051915) do
+ActiveRecord::Schema.define(:version => 20131029055431) do
 
-  create_table "products", :force => true do |t|
-    t.string   "name"
-    t.integer  "price"
-    t.text     "description"
-    t.string   "category"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-    t.string   "image_path"
-  end
+# Could not dump table "products" because of following StandardError
+#   Unknown type 'real' for column 'price'
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
